@@ -1,0 +1,264 @@
+@media screen and (max-width: 768px){
+
+    #preloader{
+        position: fixed;
+        top: 0px;
+        z-index: 999999;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    .loader{
+        border: 0 solid transparent;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: calc(50vh - 75px);
+        left: calc(50vw - 75px);
+    }
+    .loader::before, .loader::after{
+        content: '';
+        border: 1em solid #ff5733;
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: loader 2s linear infinite;
+        opacity: 0;
+    }
+    .loader:before{
+        animation-delay: .5s;
+    }
+    @keyframes loader {
+        0%{
+            transform: scale(0);
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+
+   
+ html{
+        scroll-behavior: smooth;
+    }
+  *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+  }
+  @font-face {
+      font-family: B-Kamran;
+      src: url(B-Kamran/B\ Kamran_0.ttf);
+  }
+  body{
+      background-color: #faa806;
+  }
+  .s-1{
+      display: flex;
+      justify-content: center;
+     align-items: flex-end;
+     box-shadow: 0px 0px 3px rgb(20, 17, 17) inset;
+     border-top: none;
+      color: rgb(6, 7, 7);
+      width: 300px;
+      height: 2.9em;
+      margin: 6rem auto;
+  }
+  nav ul li img{
+         width: 120px;
+  }
+  p{
+      font-family: B-Kamran;
+      font-size: 1.5em;
+      font-weight: lighter;
+  }
+  h1{
+    font-family: B-Kamran;
+    font-size: 2em;
+}
+  span{
+    font-family: B-Kamran;
+    font-size: 2.4em;
+    font-weight: bolder;
+  }
+  nav{
+    position: fixed;
+    top: 0px;
+    display: none;
+}
+nav.sticky{
+    display: block;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    overflow-x: auto;
+    z-index: 1;
+    
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+ 
+
+ 
+ 
+ .container img{
+   width: 140px;
+ }
+ .container{
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     grid-template-rows: repeat(5, 1fr);
+     margin: 1.2em;
+     gap: 1.5em;
+    
+     
+ }
+ .container :nth-child(even){
+     justify-self: end;
+ }
+
+main{
+    margin-top: 8em;
+}
+.son-1{
+   display: flex;
+   justify-content: center;
+   margin-top: 3em;
+}
+.parent-1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.5em;
+}
+ .son-1 img{
+     width: 130px;
+     
+ }
+ .child-1 img{
+        width: 70px;
+       
+ }
+ .child-1{
+   display: flex;
+   align-items: center;  
+   margin-right: 3%;
+   padding: .3%;
+ }
+ .child-2{
+     flex-grow: 1;
+    padding-right: 3%;
+ }
+ .child-3{
+     display: flex;
+     align-items: center;
+     margin-left: 3%;
+ }
+
+
+
+
+
+
+}
+
+@media  screen and (min-width: 769px){
+
+   *{
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+       text-decoration: none;
+       list-style: none;
+   }
+   html{
+    scroll-behavior: smooth;
+    }
+@font-face {
+    font-family: B-Kamran;
+    src: url(B-Kamran/B\ Kamran_0.ttf);
+   }
+   body{
+    background-color: rgb(255, 213, 0);
+  }
+  .s-1{
+      display: none;
+  }
+
+  p{
+    font-family: B-Kamran;
+    font-size: 2.5em;
+    font-weight: bold;
+    opacity: .8;
+   }
+ h1{
+    font-family: B-Kamran;
+    font-size: 2em;
+    box-shadow: 0px 0px 10px black;
+    margin: 5px;
+   }
+ span{
+    font-family: B-Kamran;
+    font-size: 2.4em;
+    font-weight: bolder;
+  }
+
+  nav ul{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     position: fixed;
+     top: 5px;
+     z-index: 1;
+     opacity: .8;
+  }
+  nav ul li img{
+      width: 112px;
+  }
+  .container{
+      display: none;
+  }
+    main{
+        text-align: center; 
+    }
+    .fa{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .fas{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);   
+        gap: 1.5em;
+        
+    }
+    section{
+        text-align: center;
+    }
+    .son-1{
+        margin: 4.5em auto;
+        
+    }
+ 
+   
+    .son-1 img{
+        width: 14em;
+    }
+    .fad{
+        display: flex;
+        justify-content: space-around;
+    }
+   
+}
